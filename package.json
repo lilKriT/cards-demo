@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/lilKriT/cards-demo/issues"
   },
-  "homepage": "https://github.com/lilKriT/cards-demo#readme",
-  "dependencies": {
-    "vanilla-tilt": "^1.7.2"
-  }
+  "homepage": "https://github.com/lilKriT/cards-demo#readme"
 }

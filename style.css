@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.glassOne {
+  min-height: 100vh;
+  background-color: #131623;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.glassOne .circleOne {
+  content: "";
+  position: absolute;
+  width: 900px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(rgb(0, 47, 255), #f0f);
+  transform: translate(-90%, -40%);
+  overflow: hidden;
+}
+
+.glassOne .circleTwo {
+  content: "";
+  position: absolute;
+  width: 800px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(#f0f, rgb(0, 47, 255));
+  transform: translate(100%, 40%);
+  overflow: hidden;
+}
+
+.glassOne .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.glassOne .container .card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  box-shadow: 20px 20px 50px rgba(0 0 0 /0.5);
+  border-radius: 15px;
+  background: rgba(255 255 255 / 0.2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid gray;
+  border-left: 2px solid gray;
+  backdrop-filter: blur(10px);
+}
+
+.glassOne .container .card img {
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.glassOne .container .card .content {
+  padding: 10px;
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.glassOne .container .card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.glassOne .container .card h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.glassOne .container .card p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.glassOne .container .card a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(0 0 0 /0.5);
+}
